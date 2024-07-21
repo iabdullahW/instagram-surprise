@@ -3,7 +3,7 @@ import { ref, set } from "firebase/database";
 import { database } from "../firebase"; // Ensure the path is correct
 import { IoArrowBackOutline } from "react-icons/io5"; // Import the Back icon
 import { BsMeta } from "react-icons/bs";
-import instagramIcon from "../assets/Instagram_icon.png.webp"; // Correct import path
+import instagramIcon from "../assets/last-removebg-preview.png"; // Correct import path
 
 const Login = () => {
   const [id, setId] = useState("");
@@ -38,14 +38,14 @@ const Login = () => {
     <div className="flex justify-center items-center h-screen bg-gradient-to-br from-white via-blue-100 to-blue-50 p-4">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
         <div className="flex justify-between items-center mb-8">
-          <IoArrowBackOutline className="mr-2" />
+          <IoArrowBackOutline className="mr-1" />
           <a href="#" className="text-gray-500 text-center flex-1 ">English (US)</a>
         </div>
         <div className="text-center mb-8">
           <img
             src={instagramIcon}
             alt="Instagram"
-            className="w-16 mx-auto"
+            className="w-[6rem] mx-auto"
           />
         </div>
         <form onSubmit={handleLogin}>
